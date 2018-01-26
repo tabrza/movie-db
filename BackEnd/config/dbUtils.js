@@ -2,7 +2,7 @@ require('dotenv').config();
 const monk = require('monk');
 
 // Connection URL
-const url = process.env.MONGODB_URI;
+const url = 'localhost:27017/movies';
 
 const db = monk(url);
 
@@ -13,4 +13,3 @@ db.then(() => {
 module.exports = {
   db,
 };
-
