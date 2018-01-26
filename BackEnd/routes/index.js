@@ -12,6 +12,11 @@ router.get('/favourites', (req, res) => {
   res.send('List of all movies');
 });
 
+router.post('/favourites'), (req, res) => {
+
+  res.send('Add favorite');
+});
+
 
 
 module.exports = router;
