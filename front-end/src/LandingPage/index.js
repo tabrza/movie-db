@@ -1,36 +1,40 @@
 import React, { Component } from 'react';
 
  class LandingPage extends Component{
-    constructor(props) {
-        super(props);
+    constructor() {
+        super();
         this.state = {
-          movieData: null
+          movieData: []
         }
       }
     componentDidMount() {
-        var that = [];
         fetch('http://api.themoviedb.org/3/list/3?api_key=121486b23802e0b6735125ff1892f340')
-          .then(data => data.json())
-          .then(movieData => {
-            movieData.forEach(data => {
-              that.push(data)      
-              this.setState({ movieData: that })
-            })
+        .then(results => {
+          return results.json();
+        }).then(data => {
+          console.log(data.items)
+          let movies = data.items.map( (movie) => {
+            return(
+              <div key={movie.id}>
+                <strong>{movie.title}</strong>
+                <p>{movie.overview}</p>
+                <p>{movie.release_date}</p>
+                <button> Add to favourite </button>
+              </div>
+            )
           })
-      }
-      render() {
-        return (
-            <div>
-            <h1>Hello,These all the movies available!</h1>
-            {this.state.movieData}
-            </div>
-        )    
-      }
+        this.setState({ movieData: movies })
+      })
+    }
+
+    render() {
+      return (
+        <div>
+          {this.state.movieData}
+        </div>
+      )
     }
 
 
+}
 export default LandingPage;
-
-
-
-
