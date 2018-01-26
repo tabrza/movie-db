@@ -4,7 +4,7 @@
 Thanks for applying - we're excited to see you! Without further ado, here's today's challenge. Get stuck in and enjoy yourselves.
 
 
-### “Roads?  Where we're going we don't need roads.” - Dr. Emmet Brown Ph.D. 
+### “Roads?  Where we're going we don't need roads.” - Dr. Emmet Brown Ph.D.
 So what do we want you to do? Here are some User Stories to get you started:
 
 ```
@@ -55,6 +55,21 @@ So I can add new films to my Top 5
 Dynamically update my rankings
 ```
 
+## "You can do thisss" - Rob Schneider
+
+1. Set up BackEnd
+      - Controller
+      - Model
+      - Routes
+      - link DB
+2. Set up FrontEnd
+3. Set up FrontEnd tests(Jest, Enzyme)
+4. Set up BackEnd tests(Mocha,Chai)
+5. Make test API call using postman
+6. Use Axios to make the API call in React FE
+7. Push response to DB
+8. TBC 
+
 
 ### "That’ll do, pig, that’ll do" - Arthur Hoggett, Farmer
 Our pre-made stack in this repo is React, Express and MongoDb. The repo is split into 2 folders, front_end for the client side app and BackEnd for the server side.  
@@ -68,7 +83,7 @@ Feel free to explore your Javascript imagination but don't get bogged down tryin
 [This Mystical API](https://www.themoviedb.org/documentation/api) will help you with finding all the info you could ever need about movies. It's not actually mystical.. thanks to themoviedb.org for building it! The config for the API is [here](./front-end/src/config.json)
 
 
-### “I’m having an old friend for dinner” - Dr. Hannibal Lectre Ph.D. 
+### “I’m having an old friend for dinner” - Dr. Hannibal Lectre Ph.D.
 So let's talk persistence... For this challenge, the client has asked that the database table follow a particular schema so that it can be integrated into a further set out 'Top 5' style lists.  
 
 The schema that you will need to follow for persisting the data is:
@@ -94,5 +109,3 @@ On that note, what are we looking for...
 - Can you push the boundaries of your knowledge?
 - How do you deliver to a brief within a short time window?
 - Are you having fun?
-
-
