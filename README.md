@@ -68,8 +68,11 @@ Dynamically update my rankings
 5. Make test API call using postman
 6. Use Axios to make the API call in React FE
 7. Push response to DB
-8. TBC 
+8. TBC
 
+## "Nope, no you can't" - Jigsaw.xyz team
+Back-end: Managed to wire up the controller. Didn't link the routes to the controller as we wanted to have the front end working in order to visualise how the routing would work with the data displayed from the API.
+Front-end: We managed to map over the data from the API call and render it in a readable format. We added a 'add to favorite button' that does absolutely nothing.
 
 ### "That’ll do, pig, that’ll do" - Arthur Hoggett, Farmer
 Our pre-made stack in this repo is React, Express and MongoDb. The repo is split into 2 folders, front_end for the client side app and BackEnd for the server side.  
